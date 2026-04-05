@@ -166,7 +166,10 @@
 // ══════════════════════════════════════════════
 //  ► CONFIGURATION
 // ══════════════════════════════════════════════
-const HF_API_KEY = "REMPLACER_PAR_VOTRE_CLE";
+let HF_API_KEY = "";
+fetch(`${API_BASE}/api/config`)
+  .then(r => r.json())
+  .then(d => { HF_API_KEY = d.hf_key; });
 const MODEL      = "mistralai/Mistral-7B-Instruct-v0.3";
 const API_BASE = "https://chatbot-doisneau.onrender.com";
 
