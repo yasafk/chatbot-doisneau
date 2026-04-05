@@ -1,0 +1,162 @@
+{
+  "centre": {
+    "nom": "Centre Social Robert Doisneau",
+    "slogan": "SuiviDePrès — Application de suivi de projets",
+    "adresse": "À renseigner",
+    "email": "contact@doisneau.fr",
+    "telephone": "01 23 45 67 89",
+    "horaires": "Lundi–Vendredi : 9h–18h"
+  },
+
+  "budget_global": {
+    "total": 18500,
+    "engage": 5700,
+    "disponible": 12800,
+    "depense_pct": 31,
+    "prochaine_revision": "15 avril 2026",
+    "annee": "2026"
+  },
+
+  "projets": [
+    {
+      "id": "numerique",
+      "nom": "Atelier Numérique Seniors",
+      "description": "Initiation au numérique pour les personnes de plus de 60 ans : tablettes, internet, messagerie, démarches en ligne.",
+      "statut": "En cours",
+      "couleur": "blue",
+      "phase_actuelle": 2,
+      "phases": [
+        { "numero": 1, "nom": "Inscription",     "statut": "termine" },
+        { "numero": 2, "nom": "Formation",       "statut": "en_cours" },
+        { "numero": 3, "nom": "Suivi",           "statut": "a_venir" },
+        { "numero": 4, "nom": "Certification",   "statut": "a_venir" }
+      ],
+      "progression": 55,
+      "budget": {
+        "alloue": 4200,
+        "depense": 2850,
+        "restant": 1350
+      },
+      "materiel": [
+        { "nom": "Tablettes numériques",  "quantite": 8,  "disponible": 5,  "etat": "bon" },
+        { "nom": "Vidéoprojecteur",       "quantite": 1,  "disponible": 1,  "etat": "bon" },
+        { "nom": "Livrets pédagogiques",  "quantite": 30, "disponible": 12, "etat": "bon" }
+      ],
+      "prochaine_etape": "Session du 10 avril — inscriptions ouvertes",
+      "responsable": "Marie Lefebvre",
+      "participants": 24,
+      "date_debut": "2026-01-15",
+      "date_fin_prevue": "2026-07-30"
+    },
+    {
+      "id": "jardin",
+      "nom": "Jardin Partagé",
+      "description": "Création d'un espace vert collectif intergénérationnel dans la cour du centre pour favoriser le lien social et l'écologie.",
+      "statut": "En cours",
+      "couleur": "green",
+      "phase_actuelle": 3,
+      "phases": [
+        { "numero": 1, "nom": "Conception",        "statut": "termine" },
+        { "numero": 2, "nom": "Aménagement",       "statut": "termine" },
+        { "numero": 3, "nom": "Plantation",        "statut": "en_cours" },
+        { "numero": 4, "nom": "Entretien collectif","statut": "a_venir" }
+      ],
+      "progression": 40,
+      "budget": {
+        "alloue": 3500,
+        "depense": 1200,
+        "restant": 2300
+      },
+      "materiel": [
+        { "nom": "Outils de jardinage", "quantite": 15, "disponible": 12, "etat": "bon" },
+        { "nom": "Bacs en bois",        "quantite": 6,  "disponible": 6,  "etat": "neuf" },
+        { "nom": "Système d'arrosage",  "quantite": 1,  "disponible": 0,  "etat": "en_attente" }
+      ],
+      "prochaine_etape": "Livraison des semences — semaine du 7 avril",
+      "responsable": "Ahmed Benali",
+      "participants": 18,
+      "date_debut": "2026-02-01",
+      "date_fin_prevue": "2026-09-30"
+    },
+    {
+      "id": "cafe",
+      "nom": "Café des Parents",
+      "description": "Espace d'échange mensuel et de soutien à la parentalité. Rencontres conviviales autour de thèmes choisis par les parents.",
+      "statut": "En cours",
+      "couleur": "orange",
+      "phase_actuelle": 4,
+      "phases": [
+        { "numero": 1, "nom": "Lancement",       "statut": "termine" },
+        { "numero": 2, "nom": "Animation mensuelle","statut": "termine" },
+        { "numero": 3, "nom": "Évaluation",      "statut": "termine" },
+        { "numero": 4, "nom": "Pérennisation",   "statut": "en_cours" }
+      ],
+      "progression": 85,
+      "budget": {
+        "alloue": 1800,
+        "depense": 1650,
+        "restant": 150
+      },
+      "materiel": [
+        { "nom": "Mobilier de salle",      "quantite": 1, "disponible": 1, "etat": "bon" },
+        { "nom": "Matériel d'animation",   "quantite": 1, "disponible": 1, "etat": "bon" },
+        { "nom": "Supports imprimés",      "quantite": 50,"disponible": 8, "etat": "bon" }
+      ],
+      "prochaine_etape": "Réunion partenariat médiathèque — 12 avril",
+      "responsable": "Sophie Martin",
+      "participants": 32,
+      "date_debut": "2025-09-01",
+      "date_fin_prevue": "2026-06-30"
+    }
+  ],
+
+  "actualites": [
+    {
+      "id": 1,
+      "date": "3 avril 2026",
+      "titre": "Atelier Numérique Seniors : session du 10 avril ouverte aux inscriptions",
+      "contenu": "Les places sont limitées à 12 participants. Inscription auprès de Marie Lefebvre.",
+      "projet_id": "numerique",
+      "important": true
+    },
+    {
+      "id": 2,
+      "date": "1 avril 2026",
+      "titre": "Jardin Partagé — livraison des semences confirmée pour la semaine du 7 avril",
+      "contenu": "Les bacs en bois sont prêts. Le système d'arrosage est en attente de livraison.",
+      "projet_id": "jardin",
+      "important": false
+    },
+    {
+      "id": 3,
+      "date": "28 mars 2026",
+      "titre": "Café des Parents : nouveau partenariat signé avec la médiathèque du quartier",
+      "contenu": "Ce partenariat permettra d'organiser des ateliers lecture et des événements communs.",
+      "projet_id": "cafe",
+      "important": true
+    },
+    {
+      "id": 4,
+      "date": "25 mars 2026",
+      "titre": "Budget Q1 2026 validé en conseil d'administration",
+      "contenu": "31% du budget annuel engagé, dans les objectifs fixés.",
+      "projet_id": null,
+      "important": false
+    },
+    {
+      "id": 5,
+      "date": "20 mars 2026",
+      "titre": "Nouveau matériel informatique réceptionné pour l'atelier numérique",
+      "contenu": "3 nouvelles tablettes reçues, portant le parc à 8 tablettes au total.",
+      "projet_id": "numerique",
+      "important": false
+    }
+  ],
+
+  "equipe": [
+    { "nom": "Marie Lefebvre",  "role": "Coordinatrice Atelier Numérique", "email": "m.lefebvre@doisneau.fr" },
+    { "nom": "Ahmed Benali",    "role": "Coordinateur Jardin Partagé",     "email": "a.benali@doisneau.fr" },
+    { "nom": "Sophie Martin",   "role": "Coordinatrice Café des Parents",  "email": "s.martin@doisneau.fr" },
+    { "nom": "Directeur",       "role": "Direction du centre",             "email": "direction@doisneau.fr" }
+  ]
+}
