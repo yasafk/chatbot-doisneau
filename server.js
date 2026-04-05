@@ -221,6 +221,9 @@ app.get('/api/ping', (req, res) => {
 app.get('/api/config', (req, res) => {
   res.json({ hf_key: process.env.HF_API_KEY || "" });
 });
+app.get('/api/config', (req, res) => {
+  res.json({ hf_key: process.env.HF_API_KEY || "" });
+});
 // ── Démarrage ────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log('');
