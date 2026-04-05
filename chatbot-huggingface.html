@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!-- saved from url=(0059)file:///C:/Users/yasmi/Downloads/chatbot-huggingface_1.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assistant IA — SuiviDePrès · Robert Doisneau</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=Instrument+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link href="./Assistant IA — SuiviDePrès · Robert Doisneau_files/css2" rel="stylesheet">
   <style>
     :root {
       --cream: #FAF8F4; --white: #FFFFFF; --ink: #151310; --ink-soft: #3D3A35;
@@ -126,13 +126,13 @@
 </head>
 <body>
 <div class="chat-widget">
-  <div class="loading-overlay" id="loading-overlay">
+  <div class="loading-overlay" id="loading-overlay" style="display: none;">
     <div class="spin"></div>
     <span>Connexion aux données du centre…</span>
   </div>
   <div class="chat-header">
     <div class="header-orb">
-      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg>
     </div>
     <div class="header-text">
       <div class="header-name">Assistant SuiviDePrès</div>
@@ -143,19 +143,17 @@
   <div class="news-ticker">
     <div class="news-dot"></div>
     <div class="news-label">Actu</div>
-    <div class="ticker-track"><div class="ticker-inner" id="ticker"><span class="ticker-item">Chargement…</span></div></div>
+    <div class="ticker-track"><div class="ticker-inner" id="ticker"><span class="ticker-item">● Atelier Numérique Seniors : session du 10 avril ouverte aux inscriptions (3 avril 2026)</span><span class="ticker-item">● Jardin Partagé — livraison des semences confirmée pour la semaine du 7 avril (1 avril 2026)</span><span class="ticker-item">● Café des Parents : nouveau partenariat signé avec la médiathèque du quartier (28 mars 2026)</span><span class="ticker-item">● Budget Q1 2026 validé en conseil d'administration (25 mars 2026)</span><span class="ticker-item">● Nouveau matériel informatique réceptionné pour l'atelier numérique (20 mars 2026)</span><span class="ticker-item">● Atelier Numérique Seniors : session du 10 avril ouverte aux inscriptions (3 avril 2026)</span><span class="ticker-item">● Jardin Partagé — livraison des semences confirmée pour la semaine du 7 avril (1 avril 2026)</span><span class="ticker-item">● Café des Parents : nouveau partenariat signé avec la médiathèque du quartier (28 mars 2026)</span><span class="ticker-item">● Budget Q1 2026 validé en conseil d'administration (25 mars 2026)</span><span class="ticker-item">● Nouveau matériel informatique réceptionné pour l'atelier numérique (20 mars 2026)</span></div></div>
   </div>
-  <div class="projets-bar" id="projets-bar">
-    <div class="projet-pill"><div class="spin" style="width:12px;height:12px;border-width:1.5px;"></div>&nbsp;Chargement…</div>
-  </div>
+  <div class="projets-bar" id="projets-bar"><div class="projet-pill"><div class="dot-blue"></div>Atelier Numérique Seniors <span class="pct">55%</span></div><div class="projet-pill"><div class="dot-green"></div>Jardin Partagé <span class="pct">40%</span></div><div class="projet-pill"><div class="dot-orange"></div>Café des Parents <span class="pct">85%</span></div></div>
   <div class="messages" id="messages">
-    <div class="ts" id="date-label"></div>
-  </div>
+    <div class="ts" id="date-label">dimanche 5 avril 2026</div>
+  <div class="msg bot"><div class="msg-av">AI</div><div class="bubble"><span>Bonjour ! Je suis connecté en direct aux données du Centre Social Robert Doisneau.<br>Je vois <strong>3 projets actifs</strong> et la dernière actualité :<br><em>Atelier Numérique Seniors : session du 10 avril ouverte aux inscriptions</em>.<br><br>Comment puis-je vous aider ?</span></div></div><div class="msg user"><div class="msg-av">Vous</div><div class="bubble">État des projets</div></div><div class="msg bot"><div class="msg-av">AI</div><div class="bubble err"><span>⚠️ Failed to fetch</span></div></div></div>
   <div class="input-zone">
     <div class="input-row">
-      <textarea id="user-input" placeholder="Posez votre question sur les projets…" rows="1" maxlength="600"></textarea>
+      <textarea id="user-input" placeholder="Posez votre question sur les projets…" rows="1" maxlength="600" style="height: auto;"></textarea>
       <button id="send-btn" onclick="sendMessage()" title="Envoyer">
-        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></svg>
       </button>
     </div>
     <div class="input-hint">Entrée pour envoyer · <span>Maj+Entrée</span> pour aller à la ligne</div>
@@ -166,12 +164,9 @@
 // ══════════════════════════════════════════════
 //  ► CONFIGURATION
 // ══════════════════════════════════════════════
-let HF_API_KEY = "";
-fetch(`${API_BASE}/api/config`)
-  .then(r => r.json())
-  .then(d => { HF_API_KEY = d.hf_key; });
+let HF_API_KEY   = ""; // chargé automatiquement depuis /api/config
 const MODEL      = "mistralai/Mistral-7B-Instruct-v0.3";
-const API_BASE = "https://chatbot-doisneau.onrender.com";
+const API_BASE   = "https://chatbot-doisneau.onrender.com";
 
 // ══════════════════════════════════════════════
 //  MOTEUR
@@ -184,6 +179,9 @@ let isLoading    = false;
 // ── Init : charge tout depuis le serveur ──────
 async function initFromServer() {
   try {
+    const cfgRes = await fetch(`${API_BASE}/api/config`);
+    if (cfgRes.ok) { const cfg = await cfgRes.json(); HF_API_KEY = cfg.hf_key || ""; }
+
     const res  = await fetch(`${API_BASE}/api/contexte`);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
@@ -378,5 +376,6 @@ document.getElementById('date-label').textContent =
 
 initFromServer();
 </script>
-</body>
-</html>
+
+
+</body></html>
