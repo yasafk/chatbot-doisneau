@@ -165,13 +165,13 @@
 //  ► CONFIGURATION
 // ══════════════════════════════════════════════
 let HF_API_KEY   = ""; // chargé automatiquement depuis /api/config
-const MODEL      = "HuggingFaceH4/zephyr-7b-beta";
+const MODEL      = "mistralai/Mistral-7B-Instruct-v0.3";
 const API_BASE   = "https://chatbot-doisneau.onrender.com";
 
 // ══════════════════════════════════════════════
 //  MOTEUR
 // ══════════════════════════════════════════════
-const HF_URL = `https://router.huggingface.co/models/${MODEL}/v1/chat/completions`;
+const HF_URL = `https://router.huggingface.co/v1/chat/completions`;
 let systemPrompt = null;
 let history      = [];
 let isLoading    = false;
